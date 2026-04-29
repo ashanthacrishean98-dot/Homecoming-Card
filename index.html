@@ -3,25 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wedding Invitation</title>
+<title>HomeComing Invitation</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Libre+Baskerville&display=swap" rel="stylesheet">
 
 <style>
 body {
-    body {
     margin: 0;
     font-family: "Libre Baskerville", serif;
-    color: #ffffff;
+    color: #333;
     overflow-x: hidden;
-
-    background: #8b0000; /* deep wedding red */
-}
 
     /* Slow parallax background */
     background:
-    linear-gradient(rgba(0,0,0,0.85), rgba(10,10,10,0.95)),
-    url('Custom Card.jpg');
+    linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)),
+    url('background1.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -61,8 +57,11 @@ body {
     inset: 0;
     border-radius: 20px;
 
-    background:
-    linear-gradient(rgba(139,0,0,0.9), rgba(40,0,0,0.95));
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.4)
+    );
 }
 
 /* SMALL OPEN BUTTON */
@@ -140,12 +139,7 @@ body {
 .bible-verse{
     font-family:"Playfair Display", serif;
     font-size:19px;
-    color:#5e0b16;
-  animation: whiteGlowPulse 3.5s ease-in-out infinite;
-    text-shadow:
-    0 0 4px rgba(255,255,255,0.85),
-    0 0 10px rgba(255,255,255,0.6),
-    0 0 16px rgba(255,255,255,0.4);
+    color:#c2a15f;
     line-height:1.9;
     margin:0;
 }
@@ -154,10 +148,7 @@ body {
     font-family:"Playfair Display", serif;
     font-size:15px;
     margin-top:14px;
-    color:#f8f6ef;
-    text-shadow:
-    0 0 3px rgba(255,255,255,0.75),
-    0 0 8px rgba(255,255,255,0.5);
+    color:#8f7a47;
 }
 
 /* Floating angel effect */
@@ -213,30 +204,20 @@ body {
 .bible-verse{
     font-family: "Playfair Display", serif;
     font-size: 18px;
-    color: #e6e6e6;
+    color: #c2a15f;
     line-height: 1.9;
     margin: 35px 0 50px 0;
 }
 .names {
     font-family: "Playfair Display", serif;
     font-size: 30px;
-    color: #5e0b16;
-    animation: whiteGlowPulse 3.5s ease-in-out infinite;
-    text-shadow:
-    0 0 4px rgba(255,255,255,0.85),
-    0 0 10px rgba(255,255,255,0.65),
-    0 0 18px rgba(255,255,255,0.45);
+    color: #c2a15f;
     margin: 20px 0;
 }
 
 h2 {
     font-family: "Playfair Display", serif;
-    color: #5e0b16;
-    animation: whiteGlowPulse 3.5s ease-in-out infinite;
-    text-shadow:
-    0 0 3px rgba(255,255,255,0.8),
-    0 0 8px rgba(255,255,255,0.6),
-    0 0 15px rgba(255,255,255,0.4);
+    color: #c2a15f;
     font-weight: 500;
     margin-top: 55px;
     margin-bottom: 22px;
@@ -246,14 +227,13 @@ p {
     font-size: 15px;
     line-height: 2.1;
     margin: 18px 0;
-    color:#ffffff;
 }
 
 /* DIVIDER */
 .divider {
     width: 50px;
     height: 2px;
-    background: linear-gradient(90deg, #3b050a, #5e0b16, #3b050a);
+    background: #c2a15f;
     margin: 38px auto;
 }
 
@@ -271,7 +251,7 @@ p {
     max-width: 350px;
     margin: 20px auto;
     padding: 8px;
-    border: 1px solid #5e0b16;
+    border: 1px solid #c2a15f;
     border-radius: 12px;
     background: rgba(255,255,255,0.85);
 
@@ -297,9 +277,9 @@ p {
 
 /* LINKS */
 a {
-    color: #5e0b16;
+    color: #c2a15f;
     text-decoration: none;
-    border-bottom: 1px solid #5e0b16;
+    border-bottom: 1px solid #c2a15f;
 }
 
 /* LINE ANIMATION */
@@ -418,7 +398,7 @@ p{
     margin:28px auto;
 }
 
-/* Wedding Date Circle Smaller */
+/* Homecoming Date Circle Smaller */
 .date-frame{
     width:200px;
     height:200px;
@@ -526,13 +506,12 @@ p{
 
     position: relative;
 
-    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-    border: 1.5px solid #6b0f1a;
+    background: linear-gradient(145deg, #ffffff, #f5f1e8);
+    border: 1.5px solid #c2a15f;
 
     box-shadow:
         0 8px 25px rgba(0,0,0,0.08),
-        inset 0 0 12px rgba(107,15,26,0.25);
-        inset 0 0 12px rgba(212,175,55,0.12);
+        inset 0 0 12px rgba(194,161,95,0.15);
 
     opacity: 0;
     transform: translateY(40px);
@@ -575,12 +554,11 @@ p{
     position: relative;
 
     background: linear-gradient(145deg, #ffffff, #f4efe6);
-    border: 2px solid #6b0f1a;
+    border: 2px solid #c2a15f;
 
     box-shadow:
-        0 0 25px rgba(212,175,55,0.25),
-        inset 0 0 15px rgba(107,15,26,0.25);
-        inset 0 0 15px rgba(212,175,55,0.12);
+        0 0 25px rgba(194,161,95,0.25),
+        inset 0 0 15px rgba(194,161,95,0.15);
 
     animation: fadeInScale 2s ease forwards;
 }
@@ -606,18 +584,13 @@ p{
     border-radius: 50%;
     border: 1px solid rgba(194,161,95,0.4);
 
-    box-shadow: 0 0 40px rgba(122,15,29,0.25);
+    box-shadow: 0 0 40px rgba(194,161,95,0.25);
 }
 
 .date-text {
     font-family: "Playfair Display", serif;
     font-size: 20px;
-    color: #5e0b16;
-    animation: whiteGlowPulse 3.5s ease-in-out infinite;
-    text-shadow:
-    0 0 4px rgba(255,255,255,0.85),
-    0 0 10px rgba(255,255,255,0.65),
-    0 0 18px rgba(255,255,255,0.45);
+    color: #c2a15f;
     line-height: 1.8;
 }
 
@@ -660,7 +633,7 @@ p{
     padding: 25px 20px;
 
     border-radius: 20px;
-    border: 1.5px solid #6b0f1a;
+    border: 1.5px solid #c2a15f;
 
     background: rgba(255,255,255,0.9);
 
@@ -686,7 +659,7 @@ p{
     padding: 25px 20px;
 
     border-radius: 20px;
-    border: 1.5px solid #6b0f1a;
+    border: 1.5px solid #c2a15f;
 
     background: rgba(255,255,255,0.95);
 
@@ -720,7 +693,7 @@ p{
     width: 100%;
     padding: 12px;
 
-    background: linear-gradient(90deg, #3b050a, #5e0b16, #3b050a);
+    background: #c2a15f;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -750,8 +723,8 @@ p{
     width: 300px;
     padding: 25px;
 
-    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-    border: 2px solid #6b0f1a;
+    background: linear-gradient(145deg, #ffffff, #f5f1e8);
+    border: 2px solid #c2a15f;
     border-radius: 20px;
 
     text-align: center;
@@ -762,10 +735,7 @@ p{
 }
 
 .success-content h2 {
-    color: #5e0b16;
-    text-shadow:
-    0 0 4px rgba(255,255,255,0.85),
-    0 0 10px rgba(255,255,255,0.6);
+    color: #c2a15f;
     margin-bottom: 10px;
 }
 
@@ -786,7 +756,7 @@ p{
     border: none;
     border-radius: 8px;
 
-    background: linear-gradient(90deg, #3b050a, #5e0b16, #3b050a);
+    background: #c2a15f;
     color: white;
 
     cursor: pointer;
@@ -802,29 +772,6 @@ p{
         transform: scale(1);
         opacity: 1;
     }
-}
-    
-    @keyframes whiteGlowPulse {
-  0% {
-    text-shadow:
-      0 0 3px rgba(255,255,255,0.7),
-      0 0 8px rgba(255,255,255,0.5),
-      0 0 14px rgba(255,255,255,0.3);
-  }
-
-  50% {
-    text-shadow:
-      0 0 6px rgba(255,255,255,1),
-      0 0 14px rgba(255,255,255,0.85),
-      0 0 26px rgba(255,255,255,0.6);
-  }
-
-  100% {
-    text-shadow:
-      0 0 3px rgba(255,255,255,0.7),
-      0 0 8px rgba(255,255,255,0.5),
-      0 0 14px rgba(255,255,255,0.3);
-  }
 }
 /* COVER WRAPPER */
 .cover-container {
@@ -871,7 +818,7 @@ p{
 .ring1 {
     inset: -10px;
     border-width: 2px;
-    border-color: #5e0b16;
+    border-color: #c2a15f;
     opacity: 0.9;
 }
 
@@ -915,16 +862,16 @@ p{
     padding: 8px 18px;
 
     border-radius: 30px;
-    border: 1px solid #5e0b16;
+    border: 1px solid #c2a15f;
 
-    color: #5e0b16;
+    color: #c2a15f;
     background: rgba(0,0,0,0.4);
 
     font-size: 14px;
     cursor: pointer;
 }
 
-/* 6 PHOTO WEDDING GALLERY */
+/* 6 PHOTO HOMECOMING GALLERY */
 .photo-gallery{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -1022,7 +969,7 @@ p{
    
 <div class="divider fade-line"></div>
 
-<h2 class="fade-line">Our Wedding Blessing</h2>
+<h2 class="fade-line">Our Home Coming Blessing</h2>
 
 <div class="blessing-header fade-line">
 
@@ -1030,8 +977,8 @@ p{
 
     <div class="verse-center">
         <p class="bible-verse">
-            “What God has joined together,<br>
-            let no one separate.”
+            “This is the day the Lord has made;<br>
+            let us rejoice and be glad in it.”
         </p>
 
         <p class="verse-ref">
@@ -1052,13 +999,13 @@ p{
         <b><i>Crishean <br>&amp;<br> Dinithi</i></b>
     </div>
 
-    <p class="fade-line">joyfully invite you</p>
-    <p class="fade-line">to celebrate the sacrament of our marriage</p>
+    <p class="fade-line">We warmly invite you</p>
+    <p class="fade-line">to celebrate our Home Coming</p>
 
     <div class="divider fade-line"></div>
     
         <div class="gold-frame">
-            <h2 class="fade-line">Our Story</h2>
+            <h2 class="fade-line">Our Journey</h2>
             <p class="fade-line">God did not simply bring us together.</p>
             <p class="fade-line">He aligned our seasons,</p>
             <p class="fade-line">mended our waiting,</p>
@@ -1070,53 +1017,32 @@ p{
     <div class="divider fade-line"></div>
         
     <div class="section-icon">✨</div>
-    <h2 class="fade-line">Wedding Day</h2>
+    <h2 class="fade-line">Homecoming Day</h2>
 
     <div class="gold-frame fade-line">
 
 <h2>Order of the Day</h2>
 
-<p>✝ Holy Eucharist<br>
-10.00 AM</p>
+<p>🥂 Homecoming Reception<br>
+7.00 pm Onwards</p>
 
-<p>🥂 Wedding Reception<br>
-12.00 noon Onwards</p>
-
-<p>🍽 Lunch & Celebration To Follow</p>
+<p>🍽 Dinner & Celebration To Follow</p>
 
 </div>
         <div class="date-frame fade-line">
             <div class="date-text">
-                Saturday<br>
-                16th May 2026<br>
-                10.00 am in the Morning
+                Wednesday<br>
+                20th May 2026<br>
+                7.00 pm in Evening
             </div>
         </div>
-
-    <div class="section-icon">✝</div>
-    <h2>The Holy Eucharist</h2>
-        
-    <p class="fade-line">
-        St. Sylvester Church, Ettukala <br>
-        Negombo
-    </p>
-    <div class="divider fade-line"></div>
-
-    <div class="section-icon">📍</div>
-    <h2 class="fade-line">Church Location</h2>
-
-    <div class="map-box fade-line">
-    <iframe
-        src="https://www.google.com/maps?q=St+Sylvester+Church+Negombo&output=embed">
-    </iframe>
-    </div>
 
     <div class="section-icon">🥂</div>
     <h2 class="fade-line">Reception</h2>
         
     <p class="fade-line">
-        The Auric Grand Ballroom <br>
-        Negombo
+        The Clover Banquets & Resorts <br>
+        Kelaniya
     </p>
 
     <div class="divider fade-line"></div>
@@ -1126,14 +1052,14 @@ p{
     
  <div class="map-box fade-line">
     <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1229907472875!2d79.8403536!3d7.2268099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2eeafffc3d2d9%3A0xaf3377a98585696c!2sAuric%20Grand%20Ballroom!5e0!3m2!1sen!2slk!4v1773811331053!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        src="https://www.google.com/maps/place/Clover+Banquets+%26+Resorts/@6.9500598,79.9276906,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae25713433fae15:0xeb0e53c13f1490f2!8m2!3d6.9500598!4d79.9276906!16s%2Fg%2F11fjstsdq0?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D">
     </iframe>
 </div>
 
 <div class="divider fade-line"></div>
 
 <h2 class="fade-line">Moments before Forever</h2>
-<p class="fade-line">Captured memories of the smiles and magic leading up to our Big day❤️</p>
+<p class="fade-line">memories of smiles and magic shared on our journey to the big day❤️</p>
 <div class="photo-gallery fade-line">
 
     <div class="gallery-item">
@@ -1166,7 +1092,7 @@ p{
     <h2>❤️ Save the Date! ❤️</h2>
 
     <p>
-        Your presence will make our wedding day complete.
+        Your presence will make our Homecoming day complete.
         We're so excited to celebrate this special moment with you!
     </p>
 
