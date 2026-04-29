@@ -873,28 +873,34 @@ p{
 
 /* 6 PHOTO HOMECOMING GALLERY */
 .photo-gallery{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
     max-width:520px;
-    margin:35px auto;
+    margin:50px auto;
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+    align-items:center;
 }
 
 .gallery-item{
-    overflow:hidden;
-    border-radius:22px;
-    background:#fff;
-    padding:6px;
+    width:100%;
+    max-width:420px;
 
-    border:1px solid rgba(194,161,95,0.45);
+    padding:10px;
+    border-radius:26px;
+
+    background: linear-gradient(145deg, #fff5f5, #ffffff);
+
+    border: 1px solid rgba(194,161,95,0.35);
 
     box-shadow:
-       0 8px 20px rgba(0,0,0,0.08),
-       inset 0 0 8px rgba(194,161,95,0.08);
+        0 10px 25px rgba(120, 20, 20, 0.18),
+        0 0 40px rgba(150, 40, 40, 0.12);
 
     opacity:0;
-    transform:translateY(30px);
-    transition:all 1.6s ease;
+    transform: translateY(40px) scale(0.98);
+    transition: all 1.4s ease;
+    position: relative;
+    overflow:hidden;
 }
 
 .gallery-item.show{
@@ -904,15 +910,38 @@ p{
 
 .gallery-item img{
     width:100%;
-    height:280px;
+    height:360px;
     object-fit:cover;
-    border-radius:18px;
-    display:block;
-    transition:transform 7s ease;
+
+    border-radius:20px;
+
+    filter: contrast(1.05) saturate(1.1);
+
+    transition: transform 6s ease;
+}
+
+.gallery-item:hover{
+    box-shadow:
+        0 15px 35px rgba(120, 20, 20, 0.25),
+        0 0 60px rgba(180, 50, 50, 0.18);
 }
 
 .gallery-item:hover img{
-    transform:scale(1.06);
+    transform: scale(1.07);
+}
+
+.gallery-item::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:26px;
+    pointer-events:none;
+
+    background: radial-gradient(
+        circle at center,
+        transparent 60%,
+        rgba(150, 30, 30, 0.15)
+    );
 }
 
 /* Mobile */
