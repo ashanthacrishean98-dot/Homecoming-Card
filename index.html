@@ -141,6 +141,11 @@ body {
     font-family:"Playfair Display", serif;
     font-size:19px;
     color:#5e0b16;
+  animation: whiteGlowPulse 3.5s ease-in-out infinite;
+    text-shadow:
+    0 0 4px rgba(255,255,255,0.85),
+    0 0 10px rgba(255,255,255,0.6),
+    0 0 16px rgba(255,255,255,0.4);
     line-height:1.9;
     margin:0;
 }
@@ -150,6 +155,9 @@ body {
     font-size:15px;
     margin-top:14px;
     color:#f8f6ef;
+    text-shadow:
+    0 0 3px rgba(255,255,255,0.75),
+    0 0 8px rgba(255,255,255,0.5);
 }
 
 /* Floating angel effect */
@@ -213,12 +221,22 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 30px;
     color: #5e0b16;
+    animation: whiteGlowPulse 3.5s ease-in-out infinite;
+    text-shadow:
+    0 0 4px rgba(255,255,255,0.85),
+    0 0 10px rgba(255,255,255,0.65),
+    0 0 18px rgba(255,255,255,0.45);
     margin: 20px 0;
 }
 
 h2 {
     font-family: "Playfair Display", serif;
     color: #5e0b16;
+    animation: whiteGlowPulse 3.5s ease-in-out infinite;
+    text-shadow:
+    0 0 3px rgba(255,255,255,0.8),
+    0 0 8px rgba(255,255,255,0.6),
+    0 0 15px rgba(255,255,255,0.4);
     font-weight: 500;
     margin-top: 55px;
     margin-bottom: 22px;
@@ -595,6 +613,11 @@ p{
     font-family: "Playfair Display", serif;
     font-size: 20px;
     color: #5e0b16;
+    animation: whiteGlowPulse 3.5s ease-in-out infinite;
+    text-shadow:
+    0 0 4px rgba(255,255,255,0.85),
+    0 0 10px rgba(255,255,255,0.65),
+    0 0 18px rgba(255,255,255,0.45);
     line-height: 1.8;
 }
 
@@ -740,6 +763,9 @@ p{
 
 .success-content h2 {
     color: #5e0b16;
+    text-shadow:
+    0 0 4px rgba(255,255,255,0.85),
+    0 0 10px rgba(255,255,255,0.6);
     margin-bottom: 10px;
 }
 
@@ -776,6 +802,29 @@ p{
         transform: scale(1);
         opacity: 1;
     }
+}
+    
+    @keyframes whiteGlowPulse {
+  0% {
+    text-shadow:
+      0 0 3px rgba(255,255,255,0.7),
+      0 0 8px rgba(255,255,255,0.5),
+      0 0 14px rgba(255,255,255,0.3);
+  }
+
+  50% {
+    text-shadow:
+      0 0 6px rgba(255,255,255,1),
+      0 0 14px rgba(255,255,255,0.85),
+      0 0 26px rgba(255,255,255,0.6);
+  }
+
+  100% {
+    text-shadow:
+      0 0 3px rgba(255,255,255,0.7),
+      0 0 8px rgba(255,255,255,0.5),
+      0 0 14px rgba(255,255,255,0.3);
+  }
 }
 /* COVER WRAPPER */
 .cover-container {
