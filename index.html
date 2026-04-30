@@ -14,8 +14,30 @@ body {
     color: #333;
     overflow-x: hidden;
 
-    background: url('back1.png') no-repeat center top fixed;
-    background-size: cover;
+    /* Elegant soft gradient base */
+    background: linear-gradient(
+        to bottom,
+        #fdfaf6 0%,
+        #f6efe5 40%,
+        #efe6d8 100%
+    );
+
+    position: relative;
+}
+
+    body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: radial-gradient(
+        circle at center,
+        rgba(194,161,95,0.15),
+        transparent 70%
+    );
+
+    pointer-events: none;
+    z-index: 0;
 }
 
 /* COVER */
