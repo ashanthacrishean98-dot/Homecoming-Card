@@ -561,12 +561,20 @@ p{
     opacity: 0.07;
 }
 
-/* DOUBLE BORDER EFFECT */
 .gold-frame::after {
     content: "";
     position: absolute;
-    inset: -8px;
-    border: 2.5px solid #6e0808;
+    inset: -12px;
+
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Love_Heart_SVG.svg/32px-Love_Heart_SVG.svg.png");
+    background-size: 18px;
+    background-repeat: repeat;
+
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+
+    padding: 10px;
+}
 }
 
 .gold-frame.show {
