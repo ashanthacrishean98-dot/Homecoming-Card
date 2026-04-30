@@ -1244,7 +1244,8 @@ function startAnimations() {
 function createSparkles() {
     for (let i = 0; i < 25; i++) {
         let sparkle = document.createElement("div");
-        sparkle.classList.add("sparkle");
+        sparkle.innerHTML = "❤";
+        
         sparkle.style.left = Math.random() * 100 + "vw";
         sparkle.style.top = Math.random() * 100 + "vh";
         sparkle.style.animationDuration = (3 + Math.random() * 3) + "s";
