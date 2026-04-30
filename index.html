@@ -350,10 +350,13 @@ a {
 @media (max-width:600px){
 
 /* General */
-    body {
+body {
         background-attachment: scroll;
         background-position: center top;
-        background-size: cover;
+
+        /* KEY CHANGE */
+        background-size: contain;   /* shows full image without stretch */
+        background-repeat: no-repeat;
     }
 }
 
