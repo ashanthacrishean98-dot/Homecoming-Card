@@ -14,8 +14,9 @@ body {
     color: #333;
     overflow-x: hidden;
 
-    background: url('back1.png') no-repeat center center fixed;
+    background: url('back1.png') no-repeat center top;
     background-size: cover;
+    background-attachment: scroll;
 }
 
 /* COVER */
@@ -347,15 +348,10 @@ a {
 @media (max-width:600px){
 
 /* General */
-body{
-    font-size:13px;
-    background-attachment: scroll;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #fff5f5; /* fallback soft red */
-    background-position: top center;
+    body {
+        background-position: top center;
+        background-size: 100% auto;
     }
-}
 }
 
 .container{
